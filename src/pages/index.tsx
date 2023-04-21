@@ -11,11 +11,11 @@ import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
 import { Hero } from '../components/Hero'
 import { Container } from '../components/Container'
 import { Main } from '../components/Main'
-import { DarkModeSwitch } from '../components/DarkModeSwitch'
-import { CTA } from '../components/CTA'
-import { Footer } from '../components/Footer'
+import AppLayout from '../components/AppLayout'
+import { NextPageWithLayout } from './_app'
+import { ReactElement } from 'react'
 
-const Index = () => (
+const Index: NextPageWithLayout = () => (
   <Container height="100vh">
     <Hero />
     <Main>
@@ -44,13 +44,11 @@ const Index = () => (
         </ListItem>
       </List>
     </Main>
-
-    <DarkModeSwitch />
-    <Footer>
-      <Text>Next ❤️ Chakra</Text>
-    </Footer>
-    <CTA />
   </Container>
 )
+
+Index.getLayout = function getLayout(page: ReactElement) {
+  return <AppLayout>{page}</AppLayout>;
+};
 
 export default Index
