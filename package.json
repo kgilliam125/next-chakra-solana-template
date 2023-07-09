@@ -6,13 +6,18 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true
+  },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.2",
     "@chakra-ui/react": "^2.2.1",
     "@chakra-ui/theme-tools": "^2.0.2",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.9.0",
-    "@project-serum/anchor": "^0.26.0",
     "@solana/wallet-adapter-base": "^0.9.22",
     "@solana/wallet-adapter-react": "^0.15.32",
     "@solana/wallet-adapter-react-ui": "^0.9.31",
@@ -24,12 +29,17 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.1",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "eslint": "8.30.0",
+    "eslint": "^8.41.0",
     "eslint-config-next": "13.1.1",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.5.0",
     "prettier": "^2.8.7",
+    "ts-jest": "^29.1.0",
     "typescript": "^4.7.2"
   }
 }
