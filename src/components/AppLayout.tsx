@@ -3,8 +3,8 @@ import { ReactNode } from "react";
 import { Footer } from "./Footer";
 import Navbar from "./Navbar";
 import NextLink from "next/link";
-import { WorkspaceProvider } from "../providers/workspaceProvider";
-import WalletContextProvider from "./WalletContextProvider";
+import { WorkspaceProvider } from "../providers/WorkspaceProvider";
+import WalletContextProvider from "../providers/WalletContextProvider";
 
 
 interface LayoutProps {
